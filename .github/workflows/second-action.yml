@@ -1,1 +1,11 @@
-this is second action for the actions to be executed
+name: second workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greeting
+        run: echo "test greeting"
+      - name: print end msg
+        run: echo "job execution done"
+        
