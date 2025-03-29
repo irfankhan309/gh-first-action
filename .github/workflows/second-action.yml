@@ -8,4 +8,11 @@ jobs:
         run: echo "test greeting"
       - name: print end msg
         run: echo "job execution done"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test msg
+        run: pip install smtplib
+      - name: print end msg
+        run: echo "smtplib installed successfully!
         
